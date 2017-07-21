@@ -1,0 +1,10 @@
+2017-07-21 18:44:12,544 [9] DEBUG DemoLog [(null)] - Hello - debugging
+2017-07-21 18:44:27,475 [9] DEBUG DemoLog [(null)] - Hello - debugging
+2017-07-21 18:44:28,337 [10] DEBUG DemoLog [(null)] - Hello - debugging
+2017-07-21 18:44:29,164 [9] DEBUG DemoLog [(null)] - Hello - debugging
+2017-07-21 18:44:29,920 [9] DEBUG DemoLog [(null)] - Hello - debugging
+2017-07-21 18:44:30,697 [13] DEBUG DemoLog [(null)] - Hello - debugging
+2017-07-21 18:44:31,514 [9] DEBUG DemoLog [(null)] - Hello - debugging
+2017-07-21 18:47:16,343 [9] DEBUG DemoLog [(null)] - Errro in Index
+System.DivideByZeroException: Attempted to divide by zero.
+   at SotreSite.Controllers.HomeController.Index() in C:\Work\StorySite\SotreSite\SotreSite\Controllers\HomeController.cs:line 22
