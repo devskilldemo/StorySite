@@ -1,5 +1,7 @@
 ﻿using log4net;
 using log4net.Config;
+using SotreSite.Models;
+using StorySite.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,23 +12,16 @@ namespace SotreSite.Controllers
 {
     public class HomeController : Controller
     {
-        private static readonly ILog log = LogManager.GetLogger("DemoLog");
+        IStoryModel _model;
+        public HomeController(IStoryModel model)
+        {
+            _model = model;
+        }
 
         public ActionResult Index()
         {
-            try
-            {
-                int x = 100000;
-                for(int i = 10; i>= -10; i--)
-                {
-                    x = x / i;
-                }
-            }
-            catch(Exception ex)
-            {
-                log.Debug("Errro in Index", ex);
-            }
-            
+            _model.CreateStory("Test", "test");
+
             return View();
         }
 

@@ -102,3 +102,13 @@ C:\Work\StorySite\SotreSite\SotreSite\obj\Debug\SotreSite.dll
 C:\Work\StorySite\SotreSite\SotreSite\obj\Debug\SotreSite.pdb
 C:\Work\StorySite\SotreSite\SotreSite\bin\log4net.dll
 C:\Work\StorySite\SotreSite\SotreSite\bin\log4net.xml
+C:\Work\StorySite\SotreSite\SotreSite\bin\StorySite.Data.dll
+C:\Work\StorySite\SotreSite\SotreSite\bin\StorySite.Data.pdb
+C:\Work\StorySite\SotreSite\SotreSite\bin\StorySite.Data.dll.config
+C:\Work\StorySite\SotreSite\SotreSite\bin\Ninject.dll
+C:\Work\StorySite\SotreSite\SotreSite\bin\Ninject.Web.Common.dll
+C:\Work\StorySite\SotreSite\SotreSite\bin\Ninject.Web.Mvc.dll
+C:\Work\StorySite\SotreSite\SotreSite\bin\WebActivatorEx.dll
+C:\Work\StorySite\SotreSite\SotreSite\bin\Ninject.xml
+C:\Work\StorySite\SotreSite\SotreSite\bin\Ninject.Web.Common.xml
+C:\Work\StorySite\SotreSite\SotreSite\bin\Ninject.Web.Mvc.xml
