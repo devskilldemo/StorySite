@@ -11,6 +11,7 @@ namespace SotreSite.App_Start
     using Ninject;
     using Ninject.Web.Common;
     using SotreSite.Models;
+    using StorySite.Data;
 
     public static class NinjectWebCommon 
     {
@@ -63,6 +64,8 @@ namespace SotreSite.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind<IStoryModel>().To<NewStoryModel>();
+            kernel.Bind<IStorySiteUnitOfWork>().To<StorySiteUnitOfWork>();
+            kernel.Bind<IStoryRepository>().To<StoryRepository>();
         }        
     }
 }

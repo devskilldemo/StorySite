@@ -8,6 +8,12 @@ namespace SotreSite.Models
 {
     public class NewStoryModel : IStoryModel
     {
+        private IStorySiteUnitOfWork unitOfWork;
+        public NewStoryModel(IStorySiteUnitOfWork unitOfWork)
+        {
+            this.unitOfWork = unitOfWork;
+        }
+
         public void CreateStory(string title, string body)
         {
             var comment = new Comment();
@@ -23,11 +29,8 @@ namespace SotreSite.Models
             story.Comments = new List<Comment>();
             story.Comments.Add(comment);
 
-            StoryContext context = new StoryContext();
-            context.Story.Add(story);
-
-
-            context.SaveChanges();
+            unitOfWork.StoryRepository.Insert(story);
+            unitOfWork.Save();
         }
     }
 }
