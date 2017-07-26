@@ -17,6 +17,12 @@ namespace StorySite.Data
         }
 
         public DbSet<Story> Story { get; set; }
+        public DbSet<Comment> Comment { get; set; }
+        public DbSet<Tag> Tag { get; set; }
+        public DbSet<Admin> Admin { get; set; }
+        public DbSet<User> User { get; set; }
+        public DbSet<Developer> Developer { get; set; }
+        public DbSet<Category> Category { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

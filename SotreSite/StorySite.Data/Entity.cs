@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace StorySite.Data
 {
-    public class Comment : Entity
+    public class Entity
     {
-        public string CommentText { get; set; }
+        public Guid ID { get; set; }
     }
 }

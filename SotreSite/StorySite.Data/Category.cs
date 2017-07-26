@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace StorySite.Data
 {
-    public class Comment : Entity
+    public class Category : Entity
     {
-        public string CommentText { get; set; }
+        public string Name { get; set; }
+        public bool IsActive { get; set; }
+        public int Serial { get; set; }
     }
 }
