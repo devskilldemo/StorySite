@@ -13,7 +13,7 @@ namespace StorySite.Data
         public StorySiteContext()
             :base("name=DefaultConnection")
         {
-            //Database.SetInitializer<StoryContext>(null);
+            Database.SetInitializer<StorySiteContext>(null);
         }
 
         public DbSet<Story> Story { get; set; }

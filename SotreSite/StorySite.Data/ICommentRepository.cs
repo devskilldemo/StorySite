@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace StorySite.Data
 {
-    public class Comment : Entity
+    public interface ICommentRepository : IRepository<Comment>
     {
-        public string CommentText { get; set; }
-        public Guid StoryID { get; set; }
     }
 }

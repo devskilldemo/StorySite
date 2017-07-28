@@ -50,9 +50,13 @@
     <Compile Include="Admin.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="Comment.cs" />
+    <Compile Include="UserRepository.cs" />
+    <Compile Include="CommentRepository.cs" />
     <Compile Include="Contact.cs" />
     <Compile Include="Developer.cs" />
     <Compile Include="Entity.cs" />
+    <Compile Include="IUserRepository.cs" />
+    <Compile Include="ICommentRepository.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="IStoryRepository.cs" />
     <Compile Include="IStorySiteUnitOfWork.cs" />
