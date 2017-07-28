@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StorySite.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,5 +10,6 @@ namespace SotreSite.Models
     public interface IStoryModel
     {
         void CreateStory(string title, string body);
+        IEnumerable<Story> GetStories();
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using StorySite.Data;
 
 namespace SotreSite.Models
 {
@@ -10,6 +11,11 @@ namespace SotreSite.Models
         public void CreateStory(string title, string body)
         {
             
+        }
+
+        public IEnumerable<Story> GetStories()
+        {
+            throw new NotImplementedException();
         }
     }
 }

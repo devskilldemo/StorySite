@@ -34,14 +34,11 @@ namespace SotreSite.Models
 
             //unitOfWork.CommentRepository.Insert(comment);
 
-            User user = new User();
-            user.Email = "jalal.exe@gmail.com";
-            user.FullName = "Jalal Uddin";
-            user.ID = Guid.NewGuid();
-            user.IsActive = true;
-            user.Password = "1234";
-            unitOfWork.UserRepository.Insert(user);
-            unitOfWork.Save();
+        }
+
+        public IEnumerable<Story> GetStories()
+        {
+            return unitOfWork.StoryRepository.Get();
         }
     }
 }
