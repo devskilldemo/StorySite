@@ -63,7 +63,7 @@ namespace SotreSite.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind<IStoryModel>().To<NewStoryModel>();
+            kernel.Bind<IStoryModel>().To<StoryModel>();
             kernel.Bind<IStorySiteUnitOfWork>().To<StorySiteUnitOfWork>();
             kernel.Bind<IStoryRepository>().To<StoryRepository>();
         }        

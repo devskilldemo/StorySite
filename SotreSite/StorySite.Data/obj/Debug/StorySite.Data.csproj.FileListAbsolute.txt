@@ -7,3 +7,4 @@ C:\Work\StorySite\SotreSite\StorySite.Data\bin\Debug\EntityFramework.xml
 C:\Work\StorySite\SotreSite\StorySite.Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Work\StorySite\SotreSite\StorySite.Data\obj\Debug\StorySite.Data.dll
 C:\Work\StorySite\SotreSite\StorySite.Data\obj\Debug\StorySite.Data.pdb
+C:\Work\StorySite\SotreSite\StorySite.Data\obj\Debug\StorySite.Data.csprojResolveAssemblyReference.cache

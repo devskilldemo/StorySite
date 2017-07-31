@@ -14,7 +14,7 @@ namespace SotreSite.Api
         private IStoryModel model;
         public StoryApiController()
         {
-            this.model = new NewStoryModel(new StorySiteUnitOfWork(new StorySiteContext()));
+            this.model = new StoryModel(new StorySiteUnitOfWork(new StorySiteContext()));
         }
         // GET api/<controller>
         public IEnumerable<string> Get()
@@ -29,24 +29,27 @@ namespace SotreSite.Api
         }
 
         // GET api/<controller>/5
-        public string Get(int id)
+        public string Get(Guid id)
         {
-            return "value";
+            return model.GetStory(id).Title;
         }
 
         // POST api/<controller>
-        public void Post([FromBody]string value)
+        public void Post([FromBody]string title, [FromBody]string body)
         {
+            model.CreateStory(title, body);
         }
 
         // PUT api/<controller>/5
-        public void Put(int id, [FromBody]string value)
+        public void Put(Guid id, [FromBody]string title, [FromBody]string body)
         {
+            model.UpdateStory(id, title, "");
         }
 
         // DELETE api/<controller>/5
-        public void Delete(int id)
+        public void Delete(Guid id)
         {
+            model.DeleteStory(id);
         }
     }
 }

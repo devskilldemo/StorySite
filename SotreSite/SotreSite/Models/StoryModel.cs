@@ -8,14 +8,47 @@ namespace SotreSite.Models
 {
     public class StoryModel : IStoryModel
     {
+        private IStorySiteUnitOfWork unitOfWork;
+        public StoryModel(IStorySiteUnitOfWork unitOfWork)
+        {
+            this.unitOfWork = unitOfWork;
+        }
+
         public void CreateStory(string title, string body)
         {
-            
+            var story = new Story();
+            story.ID = Guid.NewGuid();
+            story.CreatedOn = DateTime.Now;
+            story.Active = true;
+            story.Rating = 3;
+            story.Title = "hello";
+
+            unitOfWork.StoryRepository.Insert(story);
+            unitOfWork.Save();
         }
 
         public IEnumerable<Story> GetStories()
         {
-            throw new NotImplementedException();
+            return unitOfWork.StoryRepository.Get();
+        }
+
+        public Story GetStory(Guid id)
+        {
+            return unitOfWork.StoryRepository.GetByID(id);
+        }
+
+        public void DeleteStory(Guid id)
+        {
+            unitOfWork.StoryRepository.Delete(id);
+            unitOfWork.Save();
+        }
+
+        public void UpdateStory(Guid id, string title, string body)
+        {
+            var story = unitOfWork.StoryRepository.GetByID(id);
+            story.Title = title;
+            story.StoryBody = body;
+            unitOfWork.Save();
         }
     }
 }

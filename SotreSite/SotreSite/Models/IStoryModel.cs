@@ -11,5 +11,8 @@ namespace SotreSite.Models
     {
         void CreateStory(string title, string body);
         IEnumerable<Story> GetStories();
+        Story GetStory(Guid id);
+        void DeleteStory(Guid id);
+        void UpdateStory(Guid id, string title, string body);
     }
 }
