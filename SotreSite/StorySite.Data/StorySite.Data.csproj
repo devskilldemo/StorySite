@@ -73,5 +73,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StorySite.Library\StorySite.Library.csproj">
+      <Project>{c38a5fcb-26aa-481f-9317-d0d9dde06b53}</Project>
+      <Name>StorySite.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

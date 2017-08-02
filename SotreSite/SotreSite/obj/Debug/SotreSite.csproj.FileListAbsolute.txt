@@ -114,3 +114,5 @@ C:\Work\StorySite\SotreSite\SotreSite\bin\Microsoft.AI.Web.xml
 C:\Work\StorySite\SotreSite\SotreSite\obj\Debug\SotreSite.csprojResolveAssemblyReference.cache
 C:\Work\StorySite\SotreSite\SotreSite\obj\Debug\SotreSite.dll
 C:\Work\StorySite\SotreSite\SotreSite\obj\Debug\SotreSite.pdb
+C:\Work\StorySite\SotreSite\SotreSite\bin\StorySite.Library.dll
+C:\Work\StorySite\SotreSite\SotreSite\bin\StorySite.Library.pdb

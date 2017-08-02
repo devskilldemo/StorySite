@@ -14,17 +14,19 @@ namespace SotreSite.Models
             this.unitOfWork = unitOfWork;
         }
 
-        public void CreateStory(string title, string body)
+        public Story CreateStory(string title, string body)
         {
             var story = new Story();
             story.ID = Guid.NewGuid();
             story.CreatedOn = DateTime.Now;
             story.Active = true;
-            story.Rating = 3;
+            story.Rating = new StorySite.Library.Rating();
             story.Title = "hello";
 
             unitOfWork.StoryRepository.Insert(story);
             unitOfWork.Save();
+
+            return story;
         }
 
         public IEnumerable<Story> GetStories()

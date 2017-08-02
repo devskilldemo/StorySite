@@ -2,6 +2,7 @@
 using log4net.Config;
 using SotreSite.Models;
 using StorySite.Data;
+using StorySite.Library;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,17 +13,16 @@ namespace SotreSite.Controllers
 {
     public class HomeController : Controller
     {
-        IStoryModel _model;
-        public HomeController(IStoryModel model)
+        IStoryModel mode;
+        public HomeController(IStoryModel mode)
         {
-            _model = model;
+            this.mode = mode;
         }
 
         public ActionResult Index()
         {
-            _model.CreateStory("Test", "test");
-
-            return View();
+            mode.CreateStory("hello", "test");
+            return View(mode);
         }
 
         public ActionResult About()

@@ -9,7 +9,7 @@ namespace SotreSite.Models
 {
     public interface IStoryModel
     {
-        void CreateStory(string title, string body);
+        Story CreateStory(string title, string body);
         IEnumerable<Story> GetStories();
         Story GetStory(Guid id);
         void DeleteStory(Guid id);

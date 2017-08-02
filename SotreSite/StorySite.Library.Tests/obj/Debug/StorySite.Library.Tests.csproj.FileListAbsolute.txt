@@ -1,0 +1,14 @@
+C:\Work\StorySite\SotreSite\StorySite.Library.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Work\StorySite\SotreSite\StorySite.Library.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Work\StorySite\SotreSite\StorySite.Library.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Work\StorySite\SotreSite\StorySite.Library.Tests\bin\Debug\StorySite.Library.Tests.dll
+C:\Work\StorySite\SotreSite\StorySite.Library.Tests\bin\Debug\StorySite.Library.Tests.pdb
+C:\Work\StorySite\SotreSite\StorySite.Library.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Work\StorySite\SotreSite\StorySite.Library.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Work\StorySite\SotreSite\StorySite.Library.Tests\bin\Debug\StorySite.Library.dll
+C:\Work\StorySite\SotreSite\StorySite.Library.Tests\bin\Debug\StorySite.Library.pdb
+C:\Work\StorySite\SotreSite\StorySite.Library.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Work\StorySite\SotreSite\StorySite.Library.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Work\StorySite\SotreSite\StorySite.Library.Tests\obj\Debug\StorySite.Library.Tests.csprojResolveAssemblyReference.cache
+C:\Work\StorySite\SotreSite\StorySite.Library.Tests\obj\Debug\StorySite.Library.Tests.dll
+C:\Work\StorySite\SotreSite\StorySite.Library.Tests\obj\Debug\StorySite.Library.Tests.pdb
