@@ -21,7 +21,6 @@ namespace SotreSite.Controllers
 
         public ActionResult Index()
         {
-            mode.CreateStory("hello", "test");
             return View(mode);
         }
 
