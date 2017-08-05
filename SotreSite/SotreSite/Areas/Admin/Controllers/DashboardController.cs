@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace SotreSite.Areas.Admin.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class DashboardController : Controller
     {
         // GET: Admin/Dashboard
