@@ -1,0 +1,11 @@
+﻿@model SotreSite.Models.UserModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@foreach(var user in Model.GetUsers())
+{
+    <div>@user.UserName</div>
+}
+
