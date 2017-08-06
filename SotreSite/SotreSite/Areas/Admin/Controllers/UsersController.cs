@@ -12,6 +12,7 @@ using SotreSite.Models;
 
 namespace SotreSite.Areas.Admin.Controllers
 {
+    [Authorize(Roles ="Admin")]
     public class UsersController : Controller
     {
         private ApplicationUserManager _userManager;
