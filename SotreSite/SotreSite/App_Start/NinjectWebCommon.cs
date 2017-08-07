@@ -12,6 +12,7 @@ namespace SotreSite.App_Start
     using Ninject.Web.Common;
     using SotreSite.Models;
     using StorySite.Data;
+    using SotreSite.Areas.Admin.Models;
 
     public static class NinjectWebCommon 
     {
@@ -66,6 +67,7 @@ namespace SotreSite.App_Start
             kernel.Bind<IStoryModel>().To<StoryModel>();
             kernel.Bind<IStorySiteUnitOfWork>().To<StorySiteUnitOfWork>();
             kernel.Bind<IStoryRepository>().To<StoryRepository>();
+            kernel.Bind<DeveloperModel>().ToSelf();
         }        
     }
 }

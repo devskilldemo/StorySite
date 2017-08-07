@@ -50,6 +50,8 @@
     <Compile Include="Admin.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="Comment.cs" />
+    <Compile Include="DeveloperRepository.cs" />
+    <Compile Include="IDeveloperRepository.cs" />
     <Compile Include="UserRepository.cs" />
     <Compile Include="CommentRepository.cs" />
     <Compile Include="Contact.cs" />

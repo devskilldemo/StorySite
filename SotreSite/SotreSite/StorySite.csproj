@@ -3744,6 +3744,7 @@
     <Content Include="Content\admin\bower_components\datatables.net\Readme.md" />
     <Content Include="Areas\Admin\Views\Developers\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Developers\Add.cshtml" />
+    <Content Include="Areas\Admin\Views\Developers\Edit.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -3795,6 +3796,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Upload\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

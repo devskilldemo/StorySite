@@ -16,11 +16,13 @@ namespace StorySite.Data
             this.StoryRepository = new StoryRepository(context);
             this.CommentRepository = new CommentRepository(context);
             this.UserRepository = new UserRepository(context);
+            this.DeveloperRepository = new DeveloperRepository(context);
         }
 
         public IStoryRepository StoryRepository { get; private set; }
         public ICommentRepository CommentRepository { get; private set; }
         public IUserRepository UserRepository { get; private set; }
+        public IDeveloperRepository DeveloperRepository { get; private set; }
         private bool disposed = false;
 
         protected virtual void Dispose(bool disposing)

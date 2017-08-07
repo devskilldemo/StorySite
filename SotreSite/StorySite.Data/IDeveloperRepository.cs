@@ -6,13 +6,7 @@ using System.Threading.Tasks;
 
 namespace StorySite.Data
 {
-    public class Entity
+    public interface IDeveloperRepository : IRepository<Developer>
     {
-        public Guid ID { get; set; }
-
-        public Entity()
-        {
-            ID = Guid.NewGuid();
-        }
     }
 }
